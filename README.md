@@ -1,6 +1,13 @@
 # Identicon
 
-**TODO: Add description**
+run:
+` iex -S mix `
+
+call with a string to write the file 
+` Identicon.main("your_string") `
+
+open your file!
+` open your_string.png `
 
 ## Installation
 

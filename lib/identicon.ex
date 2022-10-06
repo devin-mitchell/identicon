@@ -1,5 +1,6 @@
 defmodule Identicon do
   def main(input) do
+    IO.puts(input)
     input
     |> hash_input
     |> pick_color
@@ -68,7 +69,7 @@ defmodule Identicon do
   end
 
   def hash_input(input) do
-    hex = :crypto.hash(:jk, input)
+    hex = :crypto.hash(:md5, input)
     |> :binary.bin_to_list
 
     %Identicon.Image{hex: hex}
